@@ -96,13 +96,14 @@ body {
   var name="9789863194460_b";
   var length=13
   var photo_type=".jpg"
-  var el = document.getElementById("slide_photo"); 
-  el.setAttribute('src',arr[0]);
   for (var j = 0; j < length; j++) {
 
     arr[j]=name+String(j+1)+photo_type
     }
 
+  var el = document.getElementById("slide_photo"); 
+  el.setAttribute('src',arr[0]);
+  
   const nextSlide = () => {
     var photo=document.getElementById("slide_photo");
     if (i==arr.length-1) 
